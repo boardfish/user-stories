@@ -1,0 +1,27 @@
+---
+layout: default
+---
+<div class="card-columns">
+  {% for story in site.data.user-stories %}
+  <div class="card">
+    <div class="card-block">
+      <h4 class="card-title">{{ story.title }}</h4>
+      <table class="table">
+        <tr>
+          <th class="text-right">As a</th>
+          <td>{{ story.as-a }}</td>
+        </tr>
+        <tr>
+          <th class="text-right">I want to</th>
+          <td>{{ story.i-want-to }}</td>
+        </tr>
+        <tr>
+          <th class="text-right">so that</th>
+          <td>{{ story.so-that }}</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  {% endfor %}
+
+</div>
