@@ -1,0 +1,17 @@
+- title:     A user story
+  as-a:      person
+  i-want-to: view a sample user story
+  so-that:   I know the syntax to follow
+  priority:  1
+
+- title:     A user story
+  as-a:      person
+  i-want-to: view a sample user story
+  so-that:   I know the syntax to follow
+  priority:  2
+
+- title:     A user story
+  as-a:      person
+  i-want-to: view a sample user story
+  so-that:   I know the syntax to follow
+  priority:  3

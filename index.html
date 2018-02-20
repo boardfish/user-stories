@@ -2,9 +2,22 @@
 layout: default
 ---
 <div class="card-columns">
-  {% for story in site.data.user-stories %}
-  <div class="card">
-    <div class="card-block">
+  {% assign stories = site.data.user_stories | sort: 'priority' %}
+  {% for story in stories %}
+  <div class="card
+  {% if story.priority == 1 %}
+  bg-danger
+  text-white
+  {% endif %}
+  {% if story.priority == 2 %}
+  bg-warning
+  {% endif %}
+  {% if story.priority == 3 %}
+  bg-success
+  text-white
+  {% endif %}
+  ">
+    <div class="card-body">
       <h4 class="card-title">{{ story.title }}</h4>
       <table class="table">
         <tr>
